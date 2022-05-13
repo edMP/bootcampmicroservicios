@@ -36,6 +36,8 @@ Si queremos bórralos todos a la vez usaremos docker stop $(docker ps –q) ya q
 Con docker registre crearemos un repositorio local de los contenedores que queramos  
 
 las imagenes que cree y guarde en los tgz son:
+
+imagen                         nombre .tgz
 bootcamp/productservice       eduprices 
 
 bootcamp/priceservice-mysql      eduproduct 
