@@ -39,5 +39,5 @@ Bootcamp/eurekaserver     edueureka
 
 bootcamp/adminserver        eduadmin 
 
-por algun motivo no me permite subirte los tgz de las imagenes asi que te doy un enelace a drive para que descarges el zip
-https://drive.google.com/file/d/1jRsacgBMLLMH4xVeRllviHsuoqifn-7z/view?usp=sharing
+por algun motivo no me permite subirte los tgz de las imagenes asi que te doy un enelace a drive para que descarges el zip he probado a descargarlo con otro ordenador 
+y no he tenido problema.  https://drive.google.com/file/d/1jRsacgBMLLMH4xVeRllviHsuoqifn-7z/view?usp=sharing
