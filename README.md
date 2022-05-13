@@ -38,6 +38,7 @@ Con docker registre crearemos un repositorio local de los contenedores que quera
 las imagenes que cree y guarde en los tgz son:
 
 imagen                         nombre .tgz
+
 bootcamp/productservice       eduprices 
 
 bootcamp/priceservice-mysql      eduproduct 
