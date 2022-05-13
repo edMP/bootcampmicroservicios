@@ -15,8 +15,6 @@ Luego se le indica el puerto donde debe permanecer abierto mediante expose
 
 expose 8080 
 
- 
-
 luego con copy indicando donde guardar las copias de la imagen empeleo los * ya que al ser una imagen por servicios no tendré conflicto a la hora de referenciar al jar por lo que se ejecutara sin problemas 
 
  COPY *jar /jars/*jar 
@@ -25,10 +23,19 @@ Y por ultimo con cmd ejecuto el jar en cuestión de igual manera referenciados c
 
 CMD java -jar /jars/*jar 
 
-El docker compose me parece de gran utilidad a la hora de trabajar con múltiples contenedores ya que de lo contrario tendríamos que ir uno por uno levantado los, además el tenerlos unidos en un único documento hace más fácil buscarlos o modificar cualquier cosa ya que de lo contrario y en un trabajo con más carga imagino que el buscar entre las carpetas puede ser algo horrible.  como medainte el docker-compose up los levanto todos a la vez pues el comando docker stop $(docker ps –q) me a resultado de gran utilidad ya que los para todos de una sola vez y si alguno de los contendores depende de otro con este comando se evitan posibles errores. 
+Docker-compose nos permite manipular múltiples contenedores, definiendo cada uno de que imagen debe trabajar en que puerto se debe abrir y tras características. 
 
-Los otros elementos adjuntos son las imágenes creadas 
+Con docker-compose up se ejecutara y levantara todos los contenedores que estén indicados dentro del documento. 
 
+Al igualq ue con docker run podemos ahcer docker-compose up –d para que se ejecuten en segundo plano  
+
+Con docker ps podremos verlos activos 
+
+Si queremos bórralos todos a la vez usaremos docker stop $(docker ps –q) ya que ps –q nos da solo los identificadores de los conetedores que estén activos. 
+
+Con docker registre crearemos un repositorio local de los contenedores que queramos  
+
+las imagenes que cree y guarde en los tgz son:
 bootcamp/productservice       eduprices 
 
 bootcamp/priceservice-mysql      eduproduct 
